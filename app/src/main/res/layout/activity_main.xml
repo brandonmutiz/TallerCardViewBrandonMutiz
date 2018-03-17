@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aula7.tallercardviewbrandonmutiz.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/mensaje"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <include layout="@layout/cardview"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="El Santuario de las Lajas es un templo y basílica para el culto cristiano católico y veneración de Nuestra Señora de las Lajas el edificio principal mide 27.50 metros la altura hasta la torre es de 100 metros y el puente mide a 50 metros de alto por 17 metros de ancho y 20 de largo este santuario se ubica en Ipiales, Departamento de Nariño, sur de la República de Colombia y es destino de peregrinación y turismo desde el siglo XVIII."
+                    android:textStyle="italic"
+                    android:layout_marginLeft="7dp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="El santuario está situado en el cañón del río Guáitara, en el corregimiento de Las Lajas del municipio de Ipiales, a siete kilómetros de la ciudad cabecera municipal, en el departamento de Nariño y a 10 km de la frontera con el Ecuador."
+                    android:layout_marginLeft="7dp"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
